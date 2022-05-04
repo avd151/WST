@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  background-color: #e6e6e6;
+}
+
+.navbar {
+  background-color: #000;
+  overflow: hidden;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: 15px 10px;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background-color: #04aa6d;
+  color: white;
+}
+
+.slideshow1 {
+  margin: auto;
+  height: 90vh;
+  width: 100vw;
+}
+
+.main-heading {
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+.slider-container {
+  width: 80vw;
+  margin: auto;
+  position: relative;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+.slide {
+  display: none;
+}
+
+.slide img {
+    width: 80vw;
+    height: 80vh;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  background-color: #04aa6d;
+  padding: 10px 15px;
+  border: 3px black solid;
+}
+
+.next {
+  right: 0;
+  border-radius: 10px;
+}
+
+.img1 {
+    display: block;
+}
+/* .content {
+  color: #eff5d4;
+  font-size: 30px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+} */
+
+.speedForm{
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 1rem;
+   width: 50%;
+}
+.speedForm input{
+    width: 40%;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: auto;
+}

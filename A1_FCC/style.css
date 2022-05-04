@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+li,
+a,
+button {
+  font-size: 25px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 15px 10%; */
+  background-color: #3a3b4f;
+  width: 100%;
+}
+.navbar ul {
+  width: 80%;
+  position: relative;
+}
+.navbar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px 0 10px;
+  /* background-color: yellow; */
+  padding: 0 20px 0 20px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+.navbar ul li a {
+  color: white;
+}
+.navbar ul li a:hover {
+  /* background-color: white; */
+  color: #fec647;
+}
+/* .navbar a {
+  color: white;
+  width: 100%;
+  height: 8vh;
+} */
+.btn {
+  padding: 0 30px 0 30px;
+  /* border-radius: 10px; */
+  background-color: #ffeb3b;
+  border: 4px solid #ff9800;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.btn:hover {
+  border: 4px solid #f44336;
+  background-color: #fec647;
+}
+
+/* Main heading  */
+.heading {
+  margin: auto;
+  padding: 20px 50px 20px 50px;
+  display: flex;
+  background-color: #f5f6f8;
+}
+.head1 {
+  margin: auto;
+  padding: 20px 60px;
+  /* background-color: red; */
+  text-align: center;
+}
+.title1 {
+  margin: 20px 30px;
+  padding: 10px 20px;
+}
+.title2 {
+  margin: 20px 30px;
+  padding: 10px 20px;
+}
+.heading .img1 {
+  margin: 20px 30px;
+  padding: 10px 20px;
+  width: 40rem;
+  height: 5rem;
+}
+.heading .img2 {
+  margin: 20px 30px;
+  padding: 10px 20px;
+  width: 40rem;
+  height: fit-content;
+}
+.heading .btn {
+  text-align: center;
+}
+
+/* Heading 2  */
+.home2 {
+  padding: 0;
+  margin: 20px;
+}
+.heading2 {
+  text-align: center;
+  margin: auto;
+  padding: 10px 30px;
+  background-color: #3a3b4f;
+}
+.heading2 .title1 {
+  color: white;
+}
+
+/* Alumni Section  */
+.alumni {
+  /* margin-bottom: 20px; */
+  background-color: #f5f6f8;
+  text-align: center;
+}
+
+.card {
+  /* background-color: red; */
+  display: flex;
+  width: 70%;
+  margin: auto;
+  background-color: white;
+  /* border: 2px solid grey; */
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.card .info {
+  font-weight: normal;
+  padding: 10px 30px;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+}
+
+/* Certifications  */
+.certification {
+  text-align: center;
+  background-color: #f5f6f8;
+}
+.cards {
+  /* background-color: yellow; */
+  width: 50%;
+  margin: auto;
+}
+.cert_card {
+  background-color: white;
+  padding: 12px 20px;
+  border: 3px solid black;
+  margin: 3px;
+  border-radius: 10px;
+  color: #3a3b4f;
+}
+.cert_card a:hover {
+  color: white;
+  background-color: #3a3b4f;
+}
+
+/* Footer  */
+.footer {
+  padding-bottom: 0;
+  background-color: #f5f6f8;
+  display: flex;
+  padding-top: 50px;
+}
+
+.left {
+  width: 50%;
+  padding: 20px 10px;
+  background-color: #cacacc;
+  font-size: 18px;
+  /* text-align: center; */
+}
+.right {
+  background-color: #cacacc;
+  width: 50%;
+  display: flex;
+  padding: 30px 10px;
+}
+.right div {
+  padding: 10px;
+  width: 50%;
+}
+.fitem {
+  font-weight: normal;
+  font-size: 18px;
+  /* display: flex; */
+}
+
+.fline {
+  display: flex;
+  background-color: #cacacc;
+}
+
+.fline li {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: normal;
+  padding: 15px;
+}
+
+/* Login Form  */
+.login {
+  font-size: 20px;
+  background-color: #f9f9f9;
+  margin: 0;
+  text-align: center;
+}
+
+.form {
+  background-color: #3a3b4f;
+  width: 50%;
+  border: 4px solid black;
+  margin: auto;
+  display: inline-block;
+  padding: 30px;
+  justify-content: center;
+}
+.form label {
+  font-size: 22px;
+  color: white;
+}
+.form input {
+  font-size: 22px;
+  margin: 10px;
+  width: 80%;
+  border: 3px solid black;
+  border-radius: 10px;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Images Slideshow</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Quicksand", sans-serif;
+      }
+
+      body {
+        background-color: #e6e6e6;
+      }
+
+      .navbar {
+        background-color: #000;
+        overflow: hidden;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: #f2f2f2;
+        text-decoration: none;
+        padding: 15px 10px;
+        font-size: 20px;
+      }
+
+      .navbar a:hover {
+        background-color: #04aa6d;
+        color: white;
+      }
+
+      .slideshow1 {
+        margin: auto;
+        height: 90vh;
+        width: 100vw;
+      }
+
+      .main-heading {
+        text-align: center;
+        padding: 20px 0 20px 0;
+      }
+      .slider-container {
+        width: 80vw;
+        margin: auto;
+        position: relative;
+        border: 3px solid black;
+        border-radius: 10px;
+      }
+      .slide {
+        display: none;
+      }
+
+      .slide img {
+        width: 80vw;
+        height: 80vh;
+      }
+
+      .prev,
+      .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        border-radius: 10px;
+        text-decoration: none;
+        background-color: #04aa6d;
+        padding: 10px 15px;
+        border: 3px black solid;
+      }
+
+      .next {
+        right: 0;
+        border-radius: 10px;
+      }
+
+      .img1 {
+        display: block;
+      }
+    </style>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <a href="index.html">Image-Slideshow</a>
+      <a href="index.html">Automatic Slideshow</a>
+      <a href="manual.html">Manual Slideshow</a>
+    </nav>
+    <div class="slideshow1">
+      <h1 class="main-heading" id="manual">Manual Slideshow</h1>
+      <div class="slider-container">
+        <div class="slide img1">
+          <img src="img/img1.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/img2.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/img3.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/img4.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/img5.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/img6.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/img7.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/img8.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/img9.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="img/img10.jpg" alt="" />
+        </div>
+        <!-- Navigation -->
+        <a href="#" class="prev" onclick="nextSlide(-1)">Previous</a>
+        <a href="#" class="next" onclick="nextSlide(1)">Next</a>
+      </div>
+    </div>
+    <!-- <script src="app.js" type="text/javascript"></script> -->
+    <script>
+      var slideIndex = 1;
+      function displaySlides(n) {
+        var ind;
+        var allSlides = document.getElementsByClassName("slide");
+        var len = allSlides.length;
+        if (n > len) {
+          slideIndex = 1;
+        } else if (n < 1) {
+          slideIndex = len;
+        }
+        for (i = 0; i < len; i++) {
+          allSlides[i].style.display = "none";
+        }
+        allSlides[slideIndex - 1].style.display = "block";
+        //console.log(slideIndex-1);
+      }
+      function nextSlide(n) {
+        slideIndex += n;
+        displaySlides(slideIndex);
+      }
+      function currSlide(n) {
+        slideIndex = n;
+        displaySlides(slideIndex);
+      }
+    </script>
+  </body>
+</html>
