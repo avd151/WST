@@ -1,0 +1,56 @@
+/* .tbl{
+    border: solid 2px black;
+    padding: 5%;
+}
+
+.tr-item{
+    border: 1px solid blue;
+} */
+
+table,
+th,
+td {
+    border: 2px solid black;
+    border-collapse: collapse;
+    text-align: center;
+}
+table{
+    margin-top: 3%;
+    width: 50%;
+}
+th{
+padding: 4%;
+background-color: #04AA6D;
+color: white;
+}
+td{
+    padding: 2%;
+}
+form{
+    font-size: 20px;
+}
+form > label{
+    margin-left: 20px;
+}
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: auto;
+}
+input[type=submit]{
+    padding: 12px 15px;
+    background-color: greenyellow;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.card{
+    font-size: 20px;
+    background-color: rgb(235, 230, 230);
+    width: 60%;
+    border: 1px solid black;
+    margin: auto;
+    padding: 10px;
+    padding-left: 20px;
+}

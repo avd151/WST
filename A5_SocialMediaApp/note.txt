@@ -1,0 +1,25 @@
+Note: You can start writing code on top of assignment 3 which is already done.  
+Assignment 5:Create a web app where users can register and make their profiles. The user’s profile should consist of the following details:
+•	Name
+•	Email (unique)
+•	Username (unique)
+•	Phone Number
+•	Profile picture
+•	About yourself
+•	Address (City, State, Country)
+•	Highest Education
+•	Skills
+•	Interests
+Users should be able to register/login.
+Implement upvote & downvote functionality for each profile as described below:
+▫	User himself can’t upvote or downvote his profile
+▫	Other users can either upvote or downvote else remain neutral
+▫	Only signed in users can upvote or downvote
+▫	Use AJAX for updating upvotes and downvotes
+▫	Display total upvotes & downvotes on each profile. 
+Overall, the Web app should have the following elements:
+1.	Login & signup functionality
+2.	Page showing list of all profiles sorted by upvotes (descending). Each profile in the list should have a name, username, profile picture, total upvotes & downvotes.
+3.	Upon clicking on the profile in the list the user should be navigated to the detailed profile view page. On this page along with displaying all information implement upvote & downvote functionality mentioned above.
+Use PHP and RDBMS software such as MySQL, MariaDB or PostgreSQL for the backend. If you are comfortable with any backend PHP framework such as Laravel you are free to use it. For UI you may use any libraries/frameworks such as bootstrap, jQuery or ReactJS.
+

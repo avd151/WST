@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.navbar ul {
+  list-style-type: none;
+  overflow: hidden;
+  background-color: black;
+  font-size: 20px;
+}
+
+.navbar li {
+  float: left;
+}
+
+.navbar a {
+  display: block;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  padding: 16px 20px;
+}
+
+.navbar a:hover {
+  background-color: rgb(86, 208, 81);
+  color: black;
+}
+
+.heading1 {
+  text-align: center;
+  padding: 10px;
+}
+
+form {
+  margin: auto;
+  padding: 15px;
+  /* background-color: rgb(128, 56, 223); */
+  font-size: 22px;
+  align-items: center;
+}
+
+form > label {
+  margin-top: 10px;
+}
+
+form > input {
+  padding: 12px 40%;
+  font-size: 15px;
+}
+.btns {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+}
+.btn {
+  padding: 12px 16px;
+  width: 20%;
+  background-color: rgb(127, 233, 78);
+  margin: auto;
+  margin: 20px;
+  border: 2px solid black;
+  text-align: center;
+  font-size: 20px;
+}
+
+.card {
+  width: 250px;
+  height: 150px;
+  padding: 10px;
+  font-size: 18px;
+  border: 2px solid black;
+  margin: auto;
+  margin: 20px auto 20px auto;
+  text-align: left;
+}
+
+.cardHeading {
+  color: black;
+  font-weight: bold;
+}
+
+.usernm {
+  color: grey;
+  font-size: 16px;
+}
+
+.card info{
+  font-size: 12px;
+  color: black;
+}

@@ -1,0 +1,5 @@
+INSERT INTO questions (question, op1, op2, op3, op4, answer) VALUES ("What is PHP?", "PHP is an open-source programming language", "PHP is used to develop dynamic and interactive websites", "PHP is a server-side scripting language", "All of the mentioned", "All of the mentioned");
+INSERT INTO questions (question, op1, op2, op3, op4, answer) VALUES ("Who is the father of PHP?", "Drek Kolkevi", "Rasmus Lerdorf", "Willam Makepiece", "List Barely", "Rasmus Lerdorf");
+INSERT INTO questions (question, op1, op2, op3, op4, answer) VALUES ("What does PHP stand for?", "Preprocessor Home Page", "Pretext Hypertext Processor", "Hypertext Preprocessor", "Personal Hyper Processor", "Hypertext Preprocessor");
+INSERT INTO questions (question, op1, op2, op3, op4, answer) VALUES ("Which of the following is the correct way to add a comment in PHP code?", "#", "//", "/**/", "All of the mentioned", "All of the mentioned");
+INSERT INTO questions (question, op1, op2, op3, op4, answer) VALUES ("Which of the following is the default file extension of PHP files?", ".php", ".ph", ".xml", ".html", ".php");

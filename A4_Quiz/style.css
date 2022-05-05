@@ -1,0 +1,35 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: black;
+    font-size: 20px;
+}
+
+.navbar li {
+    float: left;
+}
+
+.navbar a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 16px 20px;
+}
+
+.navbar a:hover {
+    background-color: rgb(86, 208, 81);
+    color: black;
+}
+
+h1{
+    color: purple;
+    text-align: center;
+    margin-top: 3%;
+}
