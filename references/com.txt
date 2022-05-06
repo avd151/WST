@@ -1,0 +1,50 @@
+Install-
+sudo apt update
+sudo apt install mysql-server
+
+//Mysql password
+sudo mysql
+use mysql;
+select user, plugin, host from mysql.user;
+alter user 'root'@'localhost' IDENTIFIED with caching_sha2_password BY 'new password';
+FLUSH priveleges
+\q
+mysql -uroot -p
+
+//install
+sudo apt install phpmyadmin
+sudo service apache2 restart
+cd Downloads
+sudo dpkg -i vscode.deb
+
+//phpmyadmin not found
+sudo vi /etc/apache2/apache2.conf
+Include /etc/phpmyadmin/apache2.conf
+sudo service apache2 restart
+
+//create url test
+sudo vi /etc/hosts
+127.0.0.1 test
+
+//change permission, folder for code
+sudo mkdir /var/www/todo
+sudo chown -R $USER:$USER /var/www/todo
+sudo chmod -R 755 /var/www
+
+code /var/www/todo
+
+//add conf file in sites-available and sites-enabled
+sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/todo.conf
+sudo vi /etc/apache2/sites-available/todo.conf -
+ServerName test
+ServerAdmin admin@localhost
+DocumentRoot /var/www/todo
+ErrorLog ${APACHE_LOG_DIR}/error.log
+CustomLog ${APACHE_LOG_DIR}/access.log combined
+sudo a2ensite todo.conf
+systemctl reload apache2
+
+//Optional
+ln -s /var/www /home/username/sites/www
+
+
