@@ -1,0 +1,41 @@
+
+https://docs.moodle.org/400/en/Step-by-step_Installation_Guide_for_Ubuntu
+
+sudo apt-get install vim
+
+sudo apt install apache2 mysql-client mysql-server php7.4 libapache2-mod-php
+
+sudo apt install graphviz aspell ghostscript clamav php7.4-pspell php7.4-curl php7.4-gd php7.4-intl php7.4-mysql php7.4-xml php7.4-xmlrpc php7.4-ldap php7.4-zip php7.4-soap php7.4-mbstring
+
+sudo service apache2 restart
+
+sudo apt install git
+
+sudo git clone git://git.moodle.org/moodle.git
+
+cd moodle
+
+sudo git branch -a
+
+sudo git branch --track MOODLE_39_STABLE origin/MOODLE_39_STABLE
+
+sudo git checkout MOODLE_39_STABLE
+
+sudo cp -R /opt/moodle /var/www/html/
+
+sudo mkdir /var/moodledata
+
+sudo chown -R www-data /var/moodledata
+
+sudo chmod -R 777 /var/moodledata
+
+sudo chmod -R 0755 /var/www/html/moodle
+
+sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
+
+default_storage_engine = innodb
+
+innodb_file_per_table = 1
+
+innodb_file_format = Barracuda
+
